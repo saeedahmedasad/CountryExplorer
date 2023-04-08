@@ -4,3 +4,27 @@
   box-sizing: border-box;
   font-family: "Poppins";
 }
+body{
+  background: hsla(223, 37%, 22%, 1);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #232f4d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #283577;
+  border-radius: 50px;
+  transition: 1s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(230, 50%, 35%);
+}
