@@ -65,6 +65,7 @@
     border-radius: 20px;
     border: 2px solid #283577;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 .basic_data .left{
     display: flex;
@@ -76,6 +77,9 @@
     height: 300px;
     background: #283577;
     border-radius: 23px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 }
 .flag_img img{
@@ -117,8 +121,106 @@
     background: #283577;
     border-radius: 50px;
     overflow: auto;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
 }
 .property{
     color: #ffffff7a;
     margin-right: 5px;
+}
+.other_info .sub_heading{
+    margin-bottom: 10px;
+}
+.other_info .cards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 5px;
+}
+.cards .card{
+    width: 100px;
+    height: 97px;
+    background: #283577;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.card h5{
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.card span{
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 2px solid #232F4D;
+}
+
+
+
+
+@media only screen and (max-width: 1290px){
+    .basic_data{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .basic_data .left{
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 900px){
+    .basic_info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
+    }
+    .basic_info .left, .right{
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 400px){
+.info{
+        width: 100%;
+    }
+    .basic_info{
+        flex-basis: 100%;
+    }
+    .basic_info .left,
+    .basic_info .right{
+        margin:auto;
+    }
+.basic_info .left div,
+.basic_info .right div{
+    width: 250px;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.basic_data .left .flag_img{
+    width: 250px;
+}
+.other_info{
+    padding: 5px 10px;
+    text-align: center;
+}
 }

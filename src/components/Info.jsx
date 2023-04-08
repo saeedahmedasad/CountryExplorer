@@ -20,7 +20,7 @@ const Info = () => {
         <div className="basic_data">
         <div className="left">
           <div className="flag_img">
-            <img src="" alt=" " />
+            <img src="https://flagcdn.com/w320/pk.png" alt=" " />
           </div>
           <p>Countries Full Name</p>
         </div>
@@ -103,27 +103,27 @@ const Info = () => {
           <div className="cards">
             <div className="card">
               <h5>Heading</h5>
-              <span>Bottom</span>
+              <span>Coordinates</span>
             </div>
             <div className="card">
               <h5>Heading</h5>
-              <span>Bottom</span>
+              <span>Map</span>
             </div>
             <div className="card">
               <h5>Heading</h5>
-              <span>Bottom</span>
+              <span>Country Code</span>
             </div>
             <div className="card">
               <h5>Heading</h5>
-              <span>Bottom</span>
+              <span>Sub Region</span>
             </div>
             <div className="card">
               <h5>Heading</h5>
-              <span>Bottom</span>
+              <span>FIFA</span>
             </div>
             <div className="card">
               <h5>Heading</h5>
-              <span>Bottom</span>
+              <span>Capital</span>
             </div>
           </div>
         </div>
