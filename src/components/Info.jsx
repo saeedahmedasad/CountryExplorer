@@ -95,10 +95,6 @@ const Info = () => {
                           <span className="value">{el.unMember ? "Yes" : "No"}</span>
                         </div>
                         <div>
-                          <span className="property">Currency:</span>
-                          <span className="value">{el.currencies[Object.keys(el.currencies)].name} {el.currencies[Object.keys(el.currencies)].symbol}</span>
-                        </div>
-                        <div>
                           <span className="property">Population:</span>
                           <span className="value">{el.population}</span>
                         </div>
@@ -110,8 +106,8 @@ const Info = () => {
                           <span className="property">Independent:</span>
                           <span className="value">{el.independent ? "Yes" : "No"}</span>
                         </div>
-                        <div>
-                          <span className="property">Time Zone:</span>
+                        <div className="time_zone">
+                          <span className="property">Time Zones:</span>
                           <span className="value">{el.timezones}</span>
                         </div>
                       </div>
@@ -130,7 +126,7 @@ const Info = () => {
                         </div>
                         <div>
                           <span className="property">Area:</span>
-                          <span className="value">{el.area}</span>
+                          <span className="value">{el.area} km<sup>2</sup></span>
                         </div>
                         <div>
                           <span className="property">Land Locked:</span>
@@ -156,19 +152,19 @@ const Info = () => {
                   <div className="sub_heading">Other Info</div>
                   <div className="cards">
                     <div className="card">
-                      <h5>Heading</h5>
+                      <h5>{el.latlng[0]}, {el.latlng[1]}</h5>
                       <span>Coordinates</span>
                     </div>
                     <div className="card">
-                      <h5>Heading</h5>
+                      <h5><a href={el.maps.googleMaps}>Google Maps</a></h5>
                       <span>Map</span>
                     </div>
                     <div className="card">
-                      <h5>Heading</h5>
+                      <h5>{el.idd["root"]}{el.idd['suffixes'][0]}</h5>
                       <span>Country Code</span>
                     </div>
                     <div className="card">
-                      <h5>Heading</h5>
+                      <h5>{el.subregion}</h5>
                       <span>Sub Region</span>
                     </div>
                     <div className="card">

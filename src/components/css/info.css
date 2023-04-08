@@ -131,6 +131,12 @@
   flex-wrap: wrap;
   animation: moveDown 1s;
 }
+.basic_info .left .time_zone{
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 10px;
+    height: 70px;
+}
 .property {
   color: #ffffff7a;
   margin-right: 5px;
